@@ -13,6 +13,7 @@ $(document).ready ->
             alert textStatus
           success: (data, text, jqXHR) ->
             $('#result').val(data.value)
+            $('#btcresult').val(data.btcvalue)
         return false;
  
   $('#amount').keyup ->    
